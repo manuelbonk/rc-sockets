@@ -1,13 +1,20 @@
 #!/usr/bin/python
 
 # import required libraries
-from bottle import route, run, get, static_file
+from bottle import route, run, get, static_file, redirect
 from subprocess import call
 
+"""
 @route ('/')
 def index ():
-    output = open ('index.html')
-    return output
+    return static_file("index.html",root='/home/m/dev/remote/static/')
+#    output = open ('/home/m/dev/remote/static/index.html')
+#    return output
+"""
+@route('/')
+@route('index.html')
+def index():
+    return static_file("index.html",root='/home/m/dev/remote/')
 
 # static files
 @route('/static/<filename>')

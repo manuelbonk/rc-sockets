@@ -1,112 +1,41 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 
 <html>
-<head>
-        <title>switch on mrp02</title>
-        <link rel="icon" href="static/favicon.ico" type="image/x-icon">
-        <link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon">
-	<meta name="mobile-web-app-capable" content="yes">
-	<!--        <link rel="stylesheet" type="text/css" href="styles.css"> -->
-        <style type="text/css">
-	h1 {
-		font-family: Verdana;
-		text-align: center;
-	}
+	<head>
+		<title>switch on mrp04</title>
+		<link rel="icon" href="static/favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon">
+		<meta name="mobile-web-app-capable" content="yes">
+		<link rel="stylesheet" type="text/css" href="static/styles.css">
+	</head>
 
-	table {
-		border: 5px solid black;
-		border-radius: 5px;
-		border-collapse: separate;
-		border-spacing: 20px 20px;
-		margin: 10px auto;
-	}
-
-	td {
-		border: none;
-		font-family: sans-serif;
-		font-size: 18px;
-	}
-
-	button  {
-		font-family: sans-serif;
-		font-size: 18px;
-		width: 120px;
-		padding: 0;
-		border: none;
-		background: none;
-		height: 60px;
-    outline: 0;
-	}
-
-	button:active {
-		background-color: #666;
-	}
-	.on {
-		background-color: #7AFF99;
-	}
-
-	.off {
-		background-color: #ED5151;
-	}
-
-	body {
-		margin-left: 2%;
-		margin-right: 2%;
-		margin-top: 2%;
-	}
-	iframe {
-		width:40px;
-		height:55px;
-		border:0;
-		}
-	</style>
-</head>
-
-<body>
-        <h1>switch on mrp02</h1>
-
-
-        <table border="1">
-                <tr>
-                        <td>switch A (Lampe)</td>
-
-                        <td><button class="on" type="button" onclick="document.getElementById('toggle_a').src='http://mrp02.bonkfamily.com/switch/a/on'">on</button>
-                        </td>
-
-                        <td><button class="off" type="button" onclick="document.getElementById('toggle_a').src='http://mrp02.bonkfamily.com/switch/a/off'">off</button>
-                        </td>
-
-                        <td><iframe id="toggle_a" name="toggle_a"></iframe>
-                        </td>
-                </tr>
-
-
-                <tr>
-                        <td>switch B (Rechner)</td>
-
-                        <td><button class="on" type="button" onclick="document.getElementById('toggle_b').src='http://mrp02.bonkfamily.com/switch/b/on'">on</button>
-                        </td>
-
-                        <td><button class="off" type="button" onclick="document.getElementById('toggle_b').src='http://mrp02.bonkfamily.com/switch/b/off'">off</button>
-                        </td>
-
-                        <td><iframe id="toggle_b" name="toggle_b"></iframe>
-                        </td>
-                </tr>
-
-
-                <tr>
-                        <td>switch C (iPod station)</td>
-
-                        <td><button class="on" type="button" onclick="document.getElementById('toggle_c').src='http://mrp02.bonkfamily.com/switch/c/on'">on</button>
-                        </td>
-
-                        <td><button class="off" type="button" onclick="document.getElementById('toggle_c').src='http://mrp02.bonkfamily.com/switch/c/off'">off</button>
-                        </td>
-
-                        <td><iframe id="toggle_c" name="toggle_c"></iframe>
-                        </td>
-                </tr>
-        </table>
-</body>
+	<body>
+		<h1>switch on mrp04</h1>
+		<table border="1">
+			<tr>
+				<td>lamp</td>
+				<td><button class="on" type="button" onclick="document.getElementById('toggle_a').src='http://mrp04.bonkfamily.com:8080/switch/01010/1/1'">on</button></td>
+				<td><button class="off" type="button" onclick="document.getElementById('toggle_a').src='http://mrp04.bonkfamily.com:8080/switch/01010/1/0'">off</button></td>
+				<td><iframe id="toggle_a"></iframe></td>
+			</tr>
+			<tr>
+				<td>zurg's peripherals</td>
+				<td><button class="on" type="button" onclick="document.getElementById('toggle_b').src='http://mrp04.bonkfamily.com:8080/switch/01010/2/1'">on</button></td>
+				<td><button class="off" type="button" onclick="document.getElementById('toggle_b').src='http://mrp04.bonkfamily.com:8080/switch/01010/2/0'">off</button></td>
+				<td><iframe id="toggle_b"></iframe></td>
+			</tr>
+			<tr>
+				<td>iPod station</td>
+				<td><button class="on" type="button" onclick="document.getElementById('toggle_c').src='http://mrp04.bonkfamily.com:8080/switch/01010/3/1'">on</button></td>
+				<td><button class="off" type="button" onclick="document.getElementById('toggle_c').src='http://mrp04.bonkfamily.com:8080/switch/01010/3/0'">off</button></td>
+				<td><iframe id="toggle_c"></iframe></td>
+			</tr>
+			<tr>
+				<td>buzz' display</td>
+				<td><button class="on" type="button" onclick="document.getElementById('toggle_d').src='http://mrp04.bonkfamily.com:8080/switch/10101/2/1'">on</button></td>
+				<td><button class="off" type="button" onclick="document.getElementById('toggle_d').src='http://mrp04.bonkfamily.com:8080/switch/10101/2/0'">off</button></td>
+				<td><iframe id="toggle_d"></iframe></td>
+			</tr>
+		</table>
+	</body>
 </html>

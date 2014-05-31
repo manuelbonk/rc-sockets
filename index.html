@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+        <title>switch on mrp02</title>
+        <link rel="icon" href="static/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon">
+	<meta name="mobile-web-app-capable" content="yes">
+	<!--        <link rel="stylesheet" type="text/css" href="styles.css"> -->
+        <style type="text/css">
+	h1 {
+		font-family: Verdana;
+		text-align: center;
+	}
+
+	table {
+		border: 5px solid black;
+		border-radius: 5px;
+		border-collapse: separate;
+		border-spacing: 20px 20px;
+		margin: 10px auto;
+	}
+
+	td {
+		border: none;
+		font-family: sans-serif;
+		font-size: 18px;
+	}
+
+	button  {
+		font-family: sans-serif;
+		font-size: 18px;
+		width: 120px;
+		padding: 0;
+		border: none;
+		background: none;
+		height: 60px;
+    outline: 0;
+	}
+
+	button:active {
+		background-color: #666;
+	}
+	.on {
+		background-color: #7AFF99;
+	}
+
+	.off {
+		background-color: #ED5151;
+	}
+
+	body {
+		margin-left: 2%;
+		margin-right: 2%;
+		margin-top: 2%;
+	}
+	iframe {
+		width:40px;
+		height:55px;
+		border:0;
+		}
+	</style>
+</head>
+
+<body>
+        <h1>switch on mrp02</h1>
+
+
+        <table border="1">
+                <tr>
+                        <td>switch A (Lampe)</td>
+
+                        <td><button class="on" type="button" onclick="document.getElementById('toggle_a').src='http://mrp02.bonkfamily.com/switch/a/on'">on</button>
+                        </td>
+
+                        <td><button class="off" type="button" onclick="document.getElementById('toggle_a').src='http://mrp02.bonkfamily.com/switch/a/off'">off</button>
+                        </td>
+
+                        <td><iframe id="toggle_a" name="toggle_a"></iframe>
+                        </td>
+                </tr>
+
+
+                <tr>
+                        <td>switch B (Rechner)</td>
+
+                        <td><button class="on" type="button" onclick="document.getElementById('toggle_b').src='http://mrp02.bonkfamily.com/switch/b/on'">on</button>
+                        </td>
+
+                        <td><button class="off" type="button" onclick="document.getElementById('toggle_b').src='http://mrp02.bonkfamily.com/switch/b/off'">off</button>
+                        </td>
+
+                        <td><iframe id="toggle_b" name="toggle_b"></iframe>
+                        </td>
+                </tr>
+
+
+                <tr>
+                        <td>switch C (iPod station)</td>
+
+                        <td><button class="on" type="button" onclick="document.getElementById('toggle_c').src='http://mrp02.bonkfamily.com/switch/c/on'">on</button>
+                        </td>
+
+                        <td><button class="off" type="button" onclick="document.getElementById('toggle_c').src='http://mrp02.bonkfamily.com/switch/c/off'">off</button>
+                        </td>
+
+                        <td><iframe id="toggle_c" name="toggle_c"></iframe>
+                        </td>
+                </tr>
+        </table>
+</body>
+</html>

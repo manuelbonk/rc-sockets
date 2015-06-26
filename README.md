@@ -16,7 +16,7 @@ Required Hardware
 ---
 
 + Raspberry Pi
-+ 434 MHz transmitter
++ 433 MHz transmitter
 + some radio controlled power sockets
 
 Setup

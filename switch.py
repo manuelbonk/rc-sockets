@@ -24,4 +24,4 @@ def switch(mode,code,pin,pos):
         return '<!doctype html><html><p style="font-family:sans-serif;font-size:18px">code: %s<br/>turned switch %s %s</p></html>' % (code,pin,state)
     return '<!doctype html><html><p style="font-family:sans-serif;font-size:18px">%s</p></html>' % (state)
 
-run (host='0.0.0.0', port=8080)
+run (host='0.0.0.0', port=80)

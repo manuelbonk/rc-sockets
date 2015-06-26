@@ -38,4 +38,4 @@ Usage
 ToDo
 ---
 
-+ write a python or perl script that generates a index.hmtl based on a config file
++ write a script that generates a index.html based on a config file

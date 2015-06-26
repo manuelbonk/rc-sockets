@@ -1,12 +1,10 @@
-
-
 h1 {
 	font-family: Helvetica, sans-serif;
 	text-align: center;
 }
 
 	table {
-	border: 5px solid #a1a1a1;
+	border: 5px solid #666666;
 	border-radius: 5px;
 	border-collapse: separate;
 	border-spacing: 20px 20px;

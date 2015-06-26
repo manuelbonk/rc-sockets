@@ -2,39 +2,54 @@
 
 <html>
 	<head>
-		<title>switch on mrp04</title>
+		<title>switch on mrp01</title>
 		<link rel="icon" href="static/favicon.ico" type="image/x-icon">
-		<link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="static/apple-touch-icon.png" type="image/x-icon">
+    <link rel="shortcut icon" sizes="196x196" href="apple-touch-icon.png">
+    <link rel="shortcut icon" sizes="128x128" href="apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="apple-touch-icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="128x128" href="apple-touch-icon.png">
+		<link rel="stylesheet" type="text/css" href="static/mobile.css">
 		<meta name="mobile-web-app-capable" content="yes">
-		<link rel="stylesheet" type="text/css" href="static/styles.css">
-	</head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<body>
-		<h1>switch on mrp04</h1>
 		<table border="1">
 			<tr>
-				<td>lamp</td>
-				<td><button class="on" type="button" onclick="document.getElementById('toggle_a').src='http://mrp04.bonkfamily.com:8080/switch/01010/1/1'">on</button></td>
-				<td><button class="off" type="button" onclick="document.getElementById('toggle_a').src='http://mrp04.bonkfamily.com:8080/switch/01010/1/0'">off</button></td>
-				<td><iframe id="toggle_a"></iframe></td>
+				<td>Baustrahler</td>
+				<td class="button"><button class="on" type="button" onclick="document.getElementById('toggle_2d').src='http://mrp01-wlan.fiona.local:8080/switch/10101/4/1'">on</button></td>
+				<td class="button"><button class="off" type="button" onclick="document.getElementById('toggle_2d').src='http://mrp01-wlan.fiona.local:8080/switch/10101/4/0'">off</button></td>
+				<td><iframe id="toggle_2d"></iframe></td>
+			</tr>
+			<TR>
+				<td>Audio</td>
+				<td class="button"><button class="on" type="button" onclick="document.getElementById('toggle_2c').src='http://mrp01-wlan.fiona.local:8080/switch/10101/3/1'">on</button></td>
+				<td class="button"><button class="off" type="button" onclick="document.getElementById('toggle_2c').src='http://mrp01-wlan.fiona.local:8080/switch/10101/3/0'">off</button></td>
+				<td><iframe id="toggle_2c"></iframe></td>
 			</tr>
 			<tr>
-				<td>zurg's peripherals</td>
-				<td><button class="on" type="button" onclick="document.getElementById('toggle_b').src='http://mrp04.bonkfamily.com:8080/switch/01010/2/1'">on</button></td>
-				<td><button class="off" type="button" onclick="document.getElementById('toggle_b').src='http://mrp04.bonkfamily.com:8080/switch/01010/2/0'">off</button></td>
-				<td><iframe id="toggle_b"></iframe></td>
+				<td>buzz display</td>
+				<td class="button"><button class="on" type="button" onclick="document.getElementById('toggle_2b').src='http://mrp01-wlan.fiona.local:8080/switch/10101/2/1'">on</button></td>
+				<td class="button"><button class="off" type="button" onclick="document.getElementById('toggle_2b').src='http://mrp01-wlan.fiona.local:8080/switch/10101/2/0'">off</button></td>
+				<td><iframe id="toggle_2b"></iframe></td>
 			</tr>
 			<tr>
 				<td>iPod station</td>
-				<td><button class="on" type="button" onclick="document.getElementById('toggle_c').src='http://mrp04.bonkfamily.com:8080/switch/01010/3/1'">on</button></td>
-				<td><button class="off" type="button" onclick="document.getElementById('toggle_c').src='http://mrp04.bonkfamily.com:8080/switch/01010/3/0'">off</button></td>
-				<td><iframe id="toggle_c"></iframe></td>
+				<td class="button"><button class="on" type="button" onclick="document.getElementById('toggle_1c').src='http://mrp01-wlan.fiona.local:8080/switch/01010/3/1'">on</button></td>
+				<td class="button"><button class="off" type="button" onclick="document.getElementById('toggle_1c').src='http://mrp01-wlan.fiona.local:8080/switch/01010/3/0'">off</button></td>
+				<td><iframe id="toggle_1c"></iframe></td>
 			</tr>
 			<tr>
-				<td>buzz' display</td>
-				<td><button class="on" type="button" onclick="document.getElementById('toggle_d').src='http://mrp04.bonkfamily.com:8080/switch/10101/2/1'">on</button></td>
-				<td><button class="off" type="button" onclick="document.getElementById('toggle_d').src='http://mrp04.bonkfamily.com:8080/switch/10101/2/0'">off</button></td>
-				<td><iframe id="toggle_d"></iframe></td>
+				<td>TV & N64</td>
+				<td class="button"><button class="on" type="button" onclick="document.getElementById('toggle_2a').src='http://mrp01-wlan.fiona.local:8080/switch/10101/1/1'">on</button></td>
+				<td class="button"><button class="off" type="button" onclick="document.getElementById('toggle_2a').src='http://mrp01-wlan.fiona.local:8080/switch/10101/1/0'">off</button></td>
+				<td><iframe id="toggle_2a"></iframe></td>
+			</tr>
+			</tr>
+				<td>Ladegeräte im Badezimmer</td>
+				<td class="button"><button class="on" type="button" onclick="document.getElementById('toggle_1a').src='http://mrp01-wlan.fiona.local:8080/switch/01010/1/1'">on</button></td>
+				<td class="button"><button class="off" type="button" onclick="document.getElementById('toggle_1a').src='http://mrp01-wlan.fiona.local:8080/switch/01010/1/0'">off</button></td>
+				<td><iframe id="toggle_1a"></iframe></td>
 			</tr>
 		</table>
 	</body>

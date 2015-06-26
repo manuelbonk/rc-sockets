@@ -1,0 +1,82 @@
+
+
+h1 {
+	font-family: Helvetica, sans-serif;
+	text-align: center;
+}
+
+table {
+	border:none;
+	border-spacing: 15px 15px;
+	margin:none;
+}
+
+td {
+	border: none;
+	font-family: Helvetica,sans-serif;
+	font-size:18px;
+	color:#303A3A;
+}
+
+.button {
+	width:50%;
+	}
+
+
+/******************************************
+	BUTTONS
+******************************************/
+
+button  {
+	font-family: Helvetica,sans-serif;
+	font-size: 18px;
+	width: 100%;
+	padding: 0;
+	border: none;
+	background: none;
+	height: 60px;
+	outline: 0;
+}
+
+.on {
+	color:#3E4D4D;
+	background-color: #47E46B;
+	border: 2px solid #3E4D4D;
+}
+
+.off {
+	color:#3E4D4D;
+	background-color: #ED5151;
+	border: 2px solid #3E4D4D;
+}
+
+.on:active {
+	color:#47E46B;
+	background-color:#3E4D4D;
+	border: 2px solid #47E46B;
+}
+
+.off:active {
+	color:#ED5151;
+	background-color:#3E4D4D;
+	border: 2px solid #ED5151;
+}
+
+button:active {
+	background-color: #666;
+	transition: ease-in-out 0.25s;
+}
+
+
+/******************************************
+	GENERAL
+******************************************/
+
+body {
+	margin: 2%;
+	background:#a1a1a1;
+}
+
+iframe {
+	display:none;
+}

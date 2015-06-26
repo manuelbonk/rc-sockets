@@ -7,12 +7,12 @@ from subprocess import call
 @route('/')
 @route('index.html')
 def index():
-    return static_file("index.html",root='/home/m/dev/remote/static')
+    return static_file("index.html",root='/home/m/dev/remote/static/')
 
 # static files
 @route('/static/<filename>')
 def server_static(filename):
-        return static_file(filename,root='/home/m/dev/remote/static')
+        return static_file(filename,root='/home/m/dev/remote/static/')
 
 @route ('/<mode>/<code>/<pin>/<pos>')
 def switch(mode,code,pin,pos):

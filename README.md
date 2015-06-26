@@ -24,7 +24,7 @@ Setup
 
 + install [wiringPi](https://projects.drogon.net/raspberry-pi/wiringpi/download-and-install/)
 + install [bottle](http://bottlepy.org/docs/dev/index.html)
-+ clone this repo `git clone https://github.com/manuelbonk/rpi-remote`
++ clone this repo `git clone https://github.com/manuelbonk/rc-sockets`
 + compile it `cd rpi-remote && make`
 + connect the transmitter's data pin to GPIO 17.
 + customize the table in `static/index.html`

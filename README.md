@@ -33,7 +33,7 @@ Usage
 ---
 
 + `sudo ./switch.py` to start the web server
-+ access `http://localhost:8080/verbose/$code/$socket/$position` or `http://localhost:8080/` to control the remotes
++ access `http://localhost/verbose/$code/$socket/$position` or `http://localhost/` to control the remotes
 
 ToDo
 ---

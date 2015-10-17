@@ -16,7 +16,7 @@ def server_static(filename):
 
 @route ('/<mode>/<code>/<pin>/<pos>')
 def switch(mode,code,pin,pos):
-    call(["./rcswitch-pi/send",code,pin,pos])
+    call([cwd+"rcswitch-pi/send",code,pin,pos])
     state="off"
     if pos == "1":
         state="on"

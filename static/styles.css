@@ -1,7 +1,3 @@
-h1 {
-	font-family: Helvetica, sans-serif;
-	text-align: center;
-}
 
 table {
 	border: 5px solid #a1a1a1;
@@ -9,6 +5,12 @@ table {
 	border-collapse: separate;
 	border-spacing: 20px 20px;
 	margin: 10px auto;
+}
+
+h1{
+	color:#666;
+	font-family: Helvetica,sans-serif;
+	font-size: 18px;
 }
 
 td {
@@ -65,5 +67,4 @@ iframe {
 
 body {
 	background:#a1a1a1;
-	color:
 }
